@@ -31,7 +31,7 @@ Returns 1 if bit i in value v equals 1
 Returns 0 if bit i in value v equals 0
 */
 int is_bit_set(unsigned char v, unsigned char i) {
-  if (i >= sizeof(unsigned char)) {
+  if (i >= sizeof(unsigned char) * 8) {
     fprintf(stderr, "Index out of range!\n");
     return 0;
   }
