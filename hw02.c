@@ -30,8 +30,8 @@ Takes in an integer value v and a integer bit index i
 Returns 1 if bit i in value v equals 1
 Returns 0 if bit i in value v equals 0
 */
-int is_bit_set(unsigned int v, unsigned char i) {
-  if (i >= sizeof(unsigned int)) {
+int is_bit_set(unsigned char v, unsigned char i) {
+  if (i >= sizeof(unsigned char)) {
     fprintf(stderr, "Index out of range!\n");
     return 0;
   }
@@ -55,7 +55,7 @@ int main(int argc, char* argv[])
 
   print_int_ranges();
   
-  unsigned int value = atoi(argv[1]);
+  unsigned char value = atoi(argv[1]);
   unsigned char bit = atoi(argv[2]);
   int is_set = is_bit_set(value, bit);
   switch(is_set) {
