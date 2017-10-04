@@ -5,20 +5,20 @@
 Prints the sizes and possible ranges of four integer data types. 
 */
 void print_int_ranges() {
-	// TODO fill in missing values!
+  // TODO fill in missing values!
   int short_bytes = 0;
-	int int_bytes = 0;
-	int uint_bytes = 0;
-	int long_bytes = sizeof(long);
+  int int_bytes = 0;
+  int uint_bytes = 0;
+  int long_bytes = sizeof(long);
 
   short short_min = 0;
-	short short_max = 0;
+  short short_max = 0;
   int int_min = 0;
-	int int_max = 0;
+  int int_max = 0;
   unsigned int uint_min = 0;
-	unsigned int uint_max = 0;
+  unsigned int uint_max = 0;
   long long_min = 1L << long_bytes * 8 - 1;
-	long long_max = ~long_min;
+  long long_max = ~long_min;
 
   // Keep these exact printf commands :)   
   printf("short is %d bytes or %d bits and ranges from %d to %d\n",
